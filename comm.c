@@ -22,7 +22,7 @@ int ssh_launch(char **args)
 	pid = fork();
 	if (pid == 0)
 	{
-		char *comm_path = _getenv("PATH");
+		char *comm_path = getenv("PATH");
 		char *abs_comm_path = NULL;
 
 		if (comm_path == NULL)

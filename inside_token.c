@@ -14,7 +14,15 @@ void token_evalute(char *abs_comm_path, char *token, char **args)
 				perror("Memory allocation failed");
 				exit(EXIT_FAILURE);
 			}
-			copy_cat(abs_comm_path, token, "/", args[0]);
+			if(_strcmp(token, "/bin") == 0)
+                          {
+                                  if(execve(args[0], args, NULL) == -1)
+                                          {
+                                            perror("execve");
+					    exit(EXIT_FAILURE);
+					  }
+			  }
+	      			  copy_cat(abs_comm_path, token, "/", args[0]);
 			if (access(abs_comm_path, X_OK) != -1)
 			{
 				if (execve(abs_comm_path, args, NULL) == -1)
@@ -24,5 +32,5 @@ void token_evalute(char *abs_comm_path, char *token, char **args)
 					exit(EXIT_FAILURE);
 				}
 			}
-			free(abs_comm_path);
+				free(abs_comm_path);
 		}
