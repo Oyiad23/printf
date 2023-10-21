@@ -40,7 +40,7 @@ int _lace(kingeso_t *info, char *cushion, size_t *p)
  * @info: the parameter struct
  * @cushion: the char buffer
  * @p: address of current position in cushion
- * @i: starting position in cushion
+ * @kk: starting position in cushion
  * @len: length of cushion
  *
  * Return: Void

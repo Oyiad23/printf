@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * kingesokingeso_exit - exits the shell
+ * kingeso_exit - exits the shell
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
  *  Return: exits with a given exit curr_pos

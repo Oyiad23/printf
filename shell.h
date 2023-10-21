@@ -44,25 +44,25 @@ typedef struct liststr
 } list_t;
 
 /**
- *struct passinfo - contains
+ *struct loop_parse - contains
  *@arg: a
  *@argv: an
  *@path: a string
  *@argc: the
- *@line_count: the
- *@err_num: the
- *@linecount_flag: put
- *@fname: the rogram
+ *@num_line: the
+ *@count_err: the
+ *@count_line: put
+ *@name_file: the rogram
  *@env: linked
  *@environ: cust
- *@history: the
+ *@backup: the
  *@alias: node
- *@env_changed: on
- *@status:command
- *@cmd_buf: buf
- *@cmd_buf_type: type
- *@readfd: line input
- *@histcount: the
+ *@alt: on
+ *@curr_pos:command
+ *@buffer_command: buf
+ *@buffer_command_type: type
+ *@rfd: line input
+ *@hnum: the
  */
 typedef struct loop_parse
 {
@@ -80,7 +80,6 @@ typedef struct loop_parse
 	char **environ;
 	int alt;
 	int curr_pos;
-
 	char **buffer_command;
 	int buffer_command_type;
 	int rfd;
@@ -93,8 +92,8 @@ typedef struct loop_parse
 
 /**
  *struct builtin_functions - caron
- *@type: the
- *@func: the
+ *@comm_type: the
+ *@functions: the
  */
 typedef struct builtin_functions
 {

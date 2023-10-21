@@ -13,7 +13,7 @@ void screen_comot(kingeso_t *info)
 }
 
 /**
- * reset - initializes kingeso_t struct
+ * _reset - initializes kingeso_t struct
  * @info: struct address
  * @av: argument vector
  */

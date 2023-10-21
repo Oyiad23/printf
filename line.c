@@ -93,7 +93,7 @@ ssize_t _get_usr_inp(kingeso_t *info)
  * read_buf - reads a buffer
  * @info: parameter struct
  * @cushion: buffer
- * @i: size
+ * @kk: size
  *
  * Return: r
  */
