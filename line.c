@@ -86,7 +86,7 @@ ssize_t _get_usr_inp(kingeso_t *info)
 	}
 
 	*cushion_p = cushion; /* else not a chain, pass back buffer from _getline() */
-	return (r); /* return length of buffer from _getline() */
+	return (r);
 }
 
 /**

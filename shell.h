@@ -80,6 +80,7 @@ typedef struct loop_parse
 	char **environ;
 	int alt;
 	int curr_pos;
+
 	char **buffer_command;
 	int buffer_command_type;
 	int rfd;
