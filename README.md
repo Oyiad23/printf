@@ -1,1 +1,1 @@
-simple_shell project readme file
+Two Kings' on simple shell project
