@@ -1,4 +1,4 @@
-# printf
+# printf project
 King Dave Printf Project
 
 Write a function that produces output according to a format.
